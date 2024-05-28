@@ -1,7 +1,7 @@
-<body class="h-screen w-full">
-    <img class=" flex h-screen w-full absolute blur-sm z-[-1] " src="https://plus.unsplash.com/premium_photo-1712328581821-96e73fbf6733?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"  alt="">
+<body class="w-full flex-wrap">
+    <img class=" flex h-full w-full absolute blur-sm z-[-1] " src="https://plus.unsplash.com/premium_photo-1712328581821-96e73fbf6733?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"  alt="">
     <!-- <img src="https://images.unsplash.com/photo-1487424439918-bc6b5bef0380?q=80&w=1933&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"  alt=""> -->
- <nav class="flex justify-between bg-blue-950  px-5 py-5 gap-10  items-center  "> 
+ <nav class="flex-wrap w-full justify-between bg-blue-950  px-5 py-5 gap-10  items-center  "> 
     <div class="flex  items-center  text-md lg:text-2xl  w-1/2 ">
     <h1 class=" font-extrabold text-green-700">Weather Today </h1>
     <span class="hidden lg:flex ml-26 lg:ml-40 absolute items-center"><i class="relative left-6 top-2  fa-solid fa-cloud" style="color: lightskyblue;"></i><i class="fa-solid fa-sun" style="color: gold;"></i>
@@ -12,16 +12,16 @@
         <button class=" text-sm lg:text-md bg-green-800 px-3 py-2 rounded-lg active:bg-green-500 text-slate-200" type="button" (click)="getWeather()">Search</button>
     </form>
  </nav>
-<div class=" flex-row lg:flex justify-center  mt-10 gap-1 w-full  px-10 lg:py-10" *ngIf="weatherData">
-<div class=" flex-row rounded-t-xl lg:rounded-xl py-5 lg:px-0 bg-white justify-center items-center gap-5 rounded  lg:w-1/3 h-[300px] lg:h-[400px] opacity-70">
-<div class=" flex-row justify-center items-center text-black lg:gap-10 lg:mt-10">
-    <h3 class="flex text-2xl lg:text-3xl  items-center justify-center mt-28 ">{{weatherData.name}}</h3>
+<div class=" flex-row  lg:flex justify-center  mt-10 gap-1 w-full h-full px-10  lg:py-10" *ngIf="weatherData">
+<div class=" flex-row rounded-t-xl lg:rounded-xl lg:py-5 lg:px-0  bg-white justify-center items-center lg:gap-5 rounded  lg:w-1/3 lg:h-[400px] opacity-70">
+<div class=" flex-row  justify-center items-center text-black lg:gap-10  lg:mt-10">
+    <h3 class="flex text-2xl lg:text-3xl  items-center justify-center mt-2 lg:mt-28 ">{{weatherData.name}}</h3>
     <p class=" flex justify-center text-6xl lg:text-8xl font-extrabold items-center ">{{temperature}}°C </p>
     <p class="flex text-2xl lg:text-3xl font-thin items-center justify-center lg:mt-5"> {{weatherdescription}}
     </p>
 </div>
 </div>
-<div  class=" flex-row bg-white opacity-70 justify-center items-center gap-5 border-[2px] rounded-b-xl lg:rounded-xl lg:w-1/3 lg:text-2xl lg:h-[400px] px-5">
+<div  class=" flex-row bg-white opacity-70 justify-center items-center lg:gap-5 border-[2px] rounded-b-xl lg:rounded-xl lg:w-1/3 text-sm lg:text-2xl lg:h-[400px] px-5">
     <div class="flex gap-10 px-3 text-black  justify-between items-center py-3">
         <p>Real feel</p>
         <p>{{Feels_like}}°C</p>
