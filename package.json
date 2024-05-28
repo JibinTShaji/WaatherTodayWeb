@@ -18,6 +18,7 @@
     "@angular/platform-browser": "^17.2.0",
     "@angular/platform-browser-dynamic": "^17.2.0",
     "@angular/router": "^17.2.0",
+    "@fortawesome/fontawesome-free": "^6.5.2",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.3"
@@ -27,12 +28,44 @@
     "@angular/cli": "^17.2.0",
     "@angular/compiler-cli": "^17.2.0",
     "@types/jasmine": "~5.1.0",
+    "autoprefixer": "^10.4.19",
     "jasmine-core": "~5.1.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.3",
     "typescript": "~5.3.2"
-  }
+  },
+  "lat": 52.2297,
+  "lon": 21.0122,
+  "timezone": "Europe/Warsaw",
+  "timezone_offset": 3600,
+  "data": [
+    {
+      "dt": 1645888976,
+      "sunrise": 1645853361,
+      "sunset": 1645891727,
+      "temp": 279.13,
+      "feels_like": 276.44,
+      "pressure": 1029,
+      "humidity": 64,
+      "dew_point": 272.88,
+      "uvi": 0.06,
+      "clouds": 0,
+      "visibility": 10000,
+      "wind_speed": 3.6,
+      "wind_deg": 340,
+      "weather": [
+        {
+          "id": 800,
+          "main": "Clear",
+          "description": "clear sky",
+          "icon": "01d"
+        }
+      ]
+    }
+  ]
 }
